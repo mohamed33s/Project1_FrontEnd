@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&family=Noto+Sans&display=swap");
+body {
+  font-family: "Cairo", sans-serif;
+  font-weight: 600;
+}
+.logoimg {
+  height: 40px;
+  border-radius: 20px;
+  border: 0.5px solid white;
+}
+
