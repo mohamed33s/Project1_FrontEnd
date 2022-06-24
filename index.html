@@ -18,7 +18,7 @@
   </head>
   <body dir="auto">
     <!-- navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
         <img class="logoimg" src="images/logoimg.jpeg" />
         <a class="navbar-brand" href="index.html">طبختك</a>
@@ -43,14 +43,95 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">تسجيل الدخول</a>
+              <a class="nav-link" href="#form">تسجيل الدخول</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">نبذة عن الموقع</a>
+              <a class="nav-link" href="#about">عن طبختك</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/chickenPie.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pancake-diet.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/qers.jpeg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="images/potatoes.jpeg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="images/marquoq.jpeg" class="d-block w-100" alt="...">
+    </div>
+        <div class="carousel-item">
+      <img src="images/cheeseCake.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div id="about" class="aboutWeb">
+    <h2>
+        عن طبختك
+    </h2>
+    <hr>
+    <p>
+        طبختك هو موقع يقدم لك وصفات ألذ وأطيب الأكلات بجميع اصنافها<br>
+        ويمكن لك ان تضيف وصفة اكلتك المفضلة عن طريق التسجيل في طبختك واضافة وضفة جديدة<br> 
+        و نطمح دائمًا تقديم احدث وألذ الاطباق لكم 
+    </p>
+</div>
+
+    <!-- Form item-->
+    <div id="form" class="formContainer">
+      <form>
+        <fieldset>
+          <legend>تسجيل الدخول</legend>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="form-label mt-4"
+              >اسم المستخدم</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="ادخل اسم المستخدم"
+            />
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" class="form-label mt-4"
+              >كلمة المرور</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="ادخل كلمة المرور"
+            />
+          </div>
+          <br />
+          <div class="d-grid gap-2">
+            <button class="btn btn-lg btn-dark" id="button" type="button">
+              تسجيل دخول
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
   </body>
 </html>
