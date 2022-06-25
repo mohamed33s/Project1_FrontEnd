@@ -2,7 +2,7 @@
 body {
   font-family: "Cairo", sans-serif;
   font-weight: 600;
-    background-color: rgb(246, 239, 231);
+  background-color: rgb(246, 239, 231);
 }
 .logoimg {
   height: 40px;
@@ -11,11 +11,11 @@ body {
 }
 
 .accordion {
-  margin: 5%;
+  margin: 2%;
 }
 
 .accordion-button {
-  background-color: bisque;
+  background-color: #b6734e;
 }
 
 .navbar-dark {
@@ -39,51 +39,58 @@ body {
   padding: 5px 15px 5px 15px;
   border-radius: 3px;
   float: right;
+  color: white;
 }
 
 #button:hover {
   background-color: #4f3b28;
 }
 
-.carousel{
-    margin-top: 2%;
+.carousel {
+  margin-top: 2%;
   margin-right: 1%;
   margin-left: 1%;
-  
 }
 
-.carousel-item img{
+.carousel-item img {
   height: 500px;
   border: 0.5px solid white;
 }
 
-.aboutWeb{
+.aboutWeb {
   margin: 15%;
 }
 
-
-.aboutWeb hr{
-  height:2px;
-  border-width:0;
-
+.aboutWeb hr {
+  height: 2px;
+  border-width: 0;
 }
 
-.aboutWeb p{
-
-line-height: 32px;
-text-align: center;
-
+.aboutWeb p {
+  line-height: 32px;
+  text-align: center;
 }
 
-.CardContaner{
+.accordion-button {
+  color: white;
+}
+.card img {
+  height: 250px;
+}
+.CardContainer {
+  margin-right: 3%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.card{
+.card {
   margin: 2%;
 }
 
-.card-header{
+.card-header {
   background-color: #b6734e;
+}
+
+.card-header {
+  color: white;
 }
