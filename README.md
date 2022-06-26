@@ -21,8 +21,6 @@ It displays many foods with recipes that prohibit them.
 #### Tabkgtic goals:
 - Make it easier for users to find food preparation recipes and help them learn to cook in the easiest way.
 
-- Allow cooking recipes to be posted by users.
-
 <br>
 
 

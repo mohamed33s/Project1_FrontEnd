@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صفحة الوصفات</title>
+    <title>الرئسية</title>
 
-    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="cssFile/bootstrap.css" />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -14,14 +14,14 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cssFile/style.css" />
   </head>
   <body dir="auto">
     <!-- navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
         <img class="logoimg" src="images/logoimg.jpeg" />
-        <a class="navbar-brand" href="index.html">طبختك</a>
+        <a class="navbar-brand" href="/htmlFile/index.html">طبختك</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,8 +50,47 @@
             </li>
           </ul>
         </div>
+        <div class="colorBage row-cols-md-3 g-3">
+          <button
+            class="btn btn-lg"
+            id="login-button"
+            type="button"
+            onclick="colorPage()"
+          >
+            داكن
+          </button>
+
+          <button
+            class="btn btn-lg"
+            id="login-button"
+            type="button"
+            onclick="zoomIn()"
+          >
+            +
+          </button>
+          <button
+            class="btn btn-lg"
+            id="login-button"
+            type="button"
+            onclick="zoomOut()"
+          >
+            -
+          </button>
+        </div>
       </div>
     </nav>
+
+    <script>
+      window.addEventListener("resize", getSizes, false);
+
+      let out = document.querySelector(".output");
+
+      function getSizes() {
+        let body = document.body;
+        let zoom = body.clientWidth + "px x " + body.clientHeight + "px";
+        out.textContent = zoom;
+      }
+    </script>
     <!-- crousel img-->
     <div
       id="carouselExampleFade"
@@ -105,15 +144,14 @@
       <hr />
       <p>
         طبختك هو موقع يقدم لك وصفات ألذ وأطيب الأكلات بجميع اصنافها<br />
-        ويمكن لك ان تضيف وصفة اكلتك المفضلة عن طريق التسجيل في طبختك واضافة وضفة
-        جديدة<br />
+
         و نطمح دائمًا تقديم احدث وألذ الاطباق لكم
       </p>
     </div>
 
     <!-- Form login-->
     <div id="form" class="formContainer">
-      <form>
+      <form id="logIn">
         <fieldset>
           <legend>تسجيل الدخول</legend>
 
@@ -124,6 +162,7 @@
             <input
               type="text"
               class="form-control"
+              id="loginUserName"
               placeholder="ادخل اسم المستخدم"
             />
             <small id="emailHelp" class="form-text text-muted"></small>
@@ -135,18 +174,25 @@
             <input
               type="password"
               class="form-control"
-              id="exampleInputPassword1"
+              id="loginPassword"
               placeholder="ادخل كلمة المرور"
             />
           </div>
           <br />
           <div class="d-grid gap-2">
-            <button class="btn btn-lg btn-dark" id="button" type="button">
+            <button
+              class="btn btn-lg"
+              id="button"
+              type="button"
+              onclick="logIn()"
+            >
               تسجيل دخول
             </button>
+            <a id="button" class="btn btn-lg" href="register.html">التسجيل</a>
           </div>
         </fieldset>
       </form>
     </div>
   </body>
+  <script src="jsFile/JsFile.js"></script>
 </html>

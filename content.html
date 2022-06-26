@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>الرئسية</title>
+    <title>الوصفات</title>
 
-    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="cssFile/bootstrap.css" />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cssFile/style.css" />
   </head>
   <body dir="auto">
     <!-- navbar-->
@@ -43,12 +43,39 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">تسجيل الخروج</a>
+              <a class="nav-link" href="index.html">تسجيل الخروج</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#recipes">الوصفات</a>
             </li>
           </ul>
+        </div>
+        <div class="colorBage row-cols-md-3 g-3">
+          <button
+            class="btn btn-lg"
+            id="login-button"
+            type="button"
+            onclick="colorPage()"
+          >
+            داكن
+          </button>
+
+          <button
+            class="btn btn-lg"
+            id="login-button"
+            type="button"
+            onclick="zoomIn()"
+          >
+            +
+          </button>
+          <button
+            class="btn btn-lg"
+            id="login-button"
+            type="button"
+            onclick="zoomOut()"
+          >
+            -
+          </button>
         </div>
       </div>
     </nav>
@@ -105,9 +132,7 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">كورات البطاطس</h5>
-                  <a href="#pota-dice" class="btn" id="button"
-                    >طريقة التحضير</a
-                  >
+                  <a href="#pota-dice" class="btn" id="button">طريقة التحضير</a>
                 </div>
               </div>
             </div>
@@ -195,7 +220,9 @@
                 <img src="images/Pizza.jpeg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">بيتزا الخضار</h5>
-                  <a href="#pizza-dice" class="btn" id="button">طريقة التحضير</a>
+                  <a href="#pizza-dice" class="btn" id="button"
+                    >طريقة التحضير</a
+                  >
                 </div>
               </div>
               <!--accordion3 card2 img food-->
@@ -221,7 +248,9 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">فطيرة الدجاج</h5>
-                  <a href="#chick-dice" class="btn" id="button">طريقة التحضير</a>
+                  <a href="#chick-dice" class="btn" id="button"
+                    >طريقة التحضير</a
+                  >
                 </div>
               </div>
             </div>
@@ -260,7 +289,9 @@
                 />
                 <div class="card-body">
                   <h5 class="card-title">بسبوسة القشطة</h5>
-                  <a href="#basbo-dice" class="btn" id="button">طريقة التحضير</a>
+                  <a href="#basbo-dice" class="btn" id="button"
+                    >طريقة التحضير</a
+                  >
                 </div>
               </div>
               <!--accordion4 card2 img food-->
@@ -495,4 +526,5 @@
     </div>
     <!-- end resipes cards-->
   </body>
+  <script src="jsFile/JsFile.js"></script>
 </html>
